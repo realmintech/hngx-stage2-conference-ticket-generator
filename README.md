@@ -45,9 +45,10 @@ After cloning the repository, navigate to the project directory:
 Ensure that you have Node.js installed on your machine. Then, install the project dependencies by running:
 
 
-
-npm install
-yarn install
+```bash
+- npm install
+- yarn install
+```
 
 4. Run the development server
 Start the development server by running the following command:
