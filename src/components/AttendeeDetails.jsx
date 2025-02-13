@@ -33,12 +33,12 @@ const AttendeeDetails = () => {
     if (file && file.type.startsWith("image/")) {
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "ml_default");
-      formData.append("cloud_name", "dg8cmo2gb");
+      formData.append("upload_preset", "mariam567");
+      formData.append("cloud_name", "di9tnhyhp");
 
       try {
         const response = await axios.post(
-          `https://api.cloudinary.com/v1_1/dg8cmo2gb/image/upload`,
+          `https://api.cloudinary.com/v1_1/di9tnhyhp/image/upload`,
           formData,
           {
             headers: {
@@ -53,8 +53,6 @@ const AttendeeDetails = () => {
       }
     }
   };
-
-
 
   const handleSubmit = async () => {
     const newErrors = {};
@@ -137,7 +135,7 @@ const AttendeeDetails = () => {
           >
             <label className="block mb-2 text-base">Upload Profile Photo</label>
             <div
-              className="border border-[#197686] p-6 cursor-pointer bg-[#07373F] text-center h-48 md:h-40 flex items-center justify-center"
+              className="border border-[#197686] p-6 rounded-xl cursor-pointer bg-[#012229] text-center h-48 md:h-40 flex items-center justify-center"
               onClick={handleUploadAreaClick}
             >
               <div className="bg-[#0E464F] md:z-10  h-40 md:h-[11rem] w-[52rem] md:w-1/2 rounded-2xl flex items-center justify-center border-3 border-[#24A0B5] p-5">
@@ -207,19 +205,21 @@ const AttendeeDetails = () => {
             required
           ></textarea>
 
-          <div className="flex-col sm:flex sm:flex-row bg-[#05252C] px-4 rounded-2xl justify-between gap-4 mt-4 sm:h-14 h-24 space-y-2 sm:space-y-0 items-center">
+          <div className="flex flex-col sm:flex-row bg-[#05252C] py-3 sm:py-0 rounded-2xl justify-between gap-4 mt-4">
             <button
               onClick={() => navigate(-1)}
-              className="w-full p-1 bg-gray-700 rounded hover:bg-gray-600 h-10 flex items-center justify-center"
+              className="w-full p-2 bg-[#088da5] text-white rounded-lg hover:bg-[#0A3A45]"
             >
               Back
             </button>
             <button
               onClick={handleSubmit}
               disabled={isLoading}
-              className="w-full p-1 bg-blue-600 rounded hover:bg-blue-500 h-10 flex items-center justify-center"
+              className="w-full p-2 border border-[#008b8b] text-[#008b8b] rounded-lg hover:bg-white/10"
             >
-              {isLoading ? "Processing..." : "Get My Free Ticket"}
+              <a href="/tickets">
+                {isLoading ? "Processing..." : "Get My Free Ticket"}
+              </a>
             </button>
           </div>
         </div>
