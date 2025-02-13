@@ -38,7 +38,8 @@ After cloning the repository, navigate to the project directory:
 
 
 
-```bash cd hngx-stage2-conference-ticket-generator
+```bash
+ cd hngx-stage2-conference-ticket-generator
 ```
 3. Install dependencies
 Ensure that you have Node.js installed on your machine. Then, install the project dependencies by running:
@@ -46,18 +47,14 @@ Ensure that you have Node.js installed on your machine. Then, install the projec
 
 
 npm install
-
-
 yarn install
+
 4. Run the development server
 Start the development server by running the following command:
 
 
 
 npm run dev
-
-
-
 yarn dev
 This will start the Vite development server and open the application in your browser at http://localhost:3000.
 
