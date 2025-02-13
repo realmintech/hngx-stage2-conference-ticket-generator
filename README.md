@@ -2,8 +2,9 @@
 
 This project is a **Ticket Generator** application built using **React** and **Vite**. The application allows users to generate and download event tickets by entering their details. It uses a minimal setup with hot module replacement (HMR) to ensure a fast and smooth development experience.
 ##
-![Image](https://github.com/user-attachments/assets/86bcf8c2-5c34-47e4-aae4-9d621298f523)
-![Image](https://github.com/user-attachments/assets/483e4af6-1276-40a6-848b-38cc831347cc)
+
+![Image](https://github.com/user-attachments/assets/2a18fde9-e6b3-44b8-9886-39927cb44c9f)
+![Image](https://github.com/user-attachments/assets/481274eb-ca26-4f5b-88b7-f936c47743a2)
 
 
 ## Features
